@@ -131,7 +131,7 @@ z = st.sidebar.number_input(
     format="%.4f"
 )
 lambda_barrier = st.sidebar.slider("Barrière de protection (en % de S0)", 0.5, 1.0, 0.7)
-N = 700 
+N = 300 
 
 t_grid, r, S0, tildeS, S = simulate_paths(T, N, r0, h, S0_val)
 
