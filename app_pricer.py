@@ -609,20 +609,20 @@ with tabs[3]:
         </div>
         """, unsafe_allow_html=True)
 
-    if year is not None:
-        st.markdown(f"""
-    <div style="background-color:#d8f3dc;padding:20px;border-radius:12px;text-align:center;
-                box-shadow:0 2px 10px rgba(0,0,0,0.15); color:#0b2e13;">
-        <h3 style='color:#1b4332;'>Early Redemption</h3>
-        <p style='font-size:22px; font-weight:bold; color:#0b2e13;'>After {year} year(s) — Observed payoff: {payoff_bs:.2f}</p>
-    </div>
-    """, unsafe_allow_html=True)
-    else:
-        st.markdown(f"""
+        if year is not None:
+            st.markdown(f"""
+            <div style="background-color:#d8f3dc;padding:20px;border-radius:12px;text-align:center;
+                        box-shadow:0 2px 10px rgba(0,0,0,0.15);">
+                <h3 style='color:#1b4332;'>Early Redemption</h3>
+                <p style='font-size:22px;font-weight:bold;'>After {year} year(s) — Observed payoff: {payoff_bs:.2f}</p>
+            </div>
+            """, unsafe_allow_html=True)
+        else:
+            st.markdown(f"""
             <div style="background-color:#ffccd5;padding:20px;border-radius:12px;text-align:center;
                         box-shadow:0 2px 10px rgba(0,0,0,0.15);">
                 <h3 style='color:#800f2f;'>Reached Maturity</h3>
-                <p style='font-size:22px;color:#1b4332;font-weight:bold;'>Observed payoff: {payoff_bs:.2f}</p>
+                <p style='font-size:22px;color:#1b433;font-weight:bold;'>Observed payoff: {payoff_bs:.2f}</p>
             </div>
             """, unsafe_allow_html=True)
 
