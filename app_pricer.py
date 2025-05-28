@@ -169,14 +169,7 @@ def run_backtest(stock_symbol, start_date, end_date, T, z, lambda_barrier, S0):
 # %% Application Streamlit
 
 st.set_page_config(
-    layout="wide",
-    page_title="Mon Autocall Athena",
-    page_icon="📈",
-    menu_items={
-        'Get Help': None,
-        'Report a Bug': None,
-        'About': None
-    }
+    layout="wide"
 )
 
 
