@@ -176,7 +176,7 @@ st.set_page_config(
 st.markdown("""
 <div style="text-align: center; font-size: 15px; margin-top: 10px; margin-bottom: 25px; line-height: 1.6;">
     Made by <strong>Mohamed Boumezou</strong> · Université Paris Dauphine – PSL<br>
-    <a href="mailto:mohamed.boumezou@dauphine.eu" style="text-decoration: none; color: white;">
+    <a href="mailto:mohamed.boumezou@dauphine.eu" style="text-decoration: none; color: #333333;">
         mohamed.boumezou@dauphine.eu
     </a> · +33 (0)7 68 20 56 35 · 
     <a href="https://www.linkedin.com/in/mohamed-boumezou-a8a0052ab/" target="_blank" style="color: #4dabf7; text-decoration: none;">
@@ -184,6 +184,7 @@ st.markdown("""
     </a>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 st.sidebar.markdown("""
