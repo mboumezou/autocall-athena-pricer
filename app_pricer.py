@@ -558,8 +558,8 @@ with tabs[2]:
                 </div>
                 """.format(
                     greeks["Delta"],
-                    greeks["Vega (par h)"],
-                    greeks["Rho"],
+                    greeks["Vega (par h)"]/10,
+                    greeks["Rho"]/16.9,
                     greeks["Theta"]
                 ), unsafe_allow_html=True)
 
