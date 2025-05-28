@@ -168,6 +168,9 @@ def run_backtest(stock_symbol, start_date, end_date, T, z, lambda_barrier, S0):
 
 # %% Application Streamlit
 
+st.set_page_config(layout="wide")
+
+
 st.markdown("""
 <div style="text-align: center; font-size: 15px; margin-top: 10px; margin-bottom: 25px; line-height: 1.6;">
     Made by <strong>Mohamed Boumezou</strong> · Université Paris Dauphine – PSL<br>
